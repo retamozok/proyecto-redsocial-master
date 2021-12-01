@@ -1,0 +1,27 @@
+ <form action="/instagram" method="post">
+          <input type="text" name="nombre" required>
+          <input type="text" name="descripcion" required>
+          <input type="file" name="foto" required>
+          <button class="m-3" type="submit">Crear Publicacion</button>
+  </form>
+
+<div class="row justify-content-around mt-3 mb-3">
+   {{#each publicaciones }}
+    <div class="col-5 col-sm-3 select-producto m-2 ms-0">
+      
+      <img src="./img/{{foto}}" class="col-12 m-1 imagen-producto" alt="...">
+      <h5 class="titulo-producto">{{nombre}}</h5>
+      <p class="descripcion-produ">{{descripcion}}</p>
+        
+        <form action="/instagram" method="post">
+          <input type="hidden" name="id" value={{id}}>
+          <input type="hidden" name="nombre" value="{{nombre}}">
+          <input type="hidden" name="foto" value="{{foto}}">
+          <input type="hidden" name="descripcion" value="{{descripcion}}">
+          <button class="m-3" type="submit"></button>
+        </form>
+      
+      </div>
+    {{/each}}
+  </div>
+

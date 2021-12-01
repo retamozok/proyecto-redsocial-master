@@ -1,0 +1,27 @@
+.bodyclase {
+    background-color: rgb(53, 219, 211);
+}
+
+
+.sub-ig {font-size: 50px;
+    color: rgb(148, 136, 255);
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(231, 39, 119);
+    text-shadow: 3px solid black;
+}
+
+.sub-tablero {font-size: 25px;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 168, 55);
+    text-align: center;
+}
+
+
+.footer {background-color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #ffff;
+
+}
